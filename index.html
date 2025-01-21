@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Plans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Choose Your Plan</h1>
+  <div class="plan-container">
+    <div class="plan">
+      <h2>Free</h2>
+      <p>Watch for 5 minutes.</p>
+      <p><strong>₹0</strong></p>
+      <button onclick="alert('You are free user')">Current Plan</button>
+    </div>
+    <div class="plan">
+      <h2>Bronze</h2>
+      <p>Watch for 7 minutes.</p>
+      <p><strong>₹10</strong></p>
+      <button onclick="upgradePlan('Bronze', 10)">Upgrade</button>
+    </div>
+    <div class="plan">
+      <h2>Silver</h2>
+      <p>Watch for 10 minutes.</p>
+      <p><strong>₹50</strong></p>
+      <button onclick="upgradePlan('Silver', 50)">Upgrade</button>
+    </div>
+    <div class="plan">
+      <h2>Gold</h2>
+      <p>Unlimited watching time.</p>
+      <p><strong>₹100</strong></p>
+      <button onclick="upgradePlan('Gold', 100)">Upgrade</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
